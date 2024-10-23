@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #8687c5;
+  border-bottom: 2px solid #ff0000;
+}
+
+.logo img {
+  width: 70px;
+  height: 40px;
+}
+
+.Nombre a{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifsss;
+  font-size:200%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about-button {
+  background-color: #6c757f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.about-button a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.about-button:hover {
+  background-color: #0056b3;
+}

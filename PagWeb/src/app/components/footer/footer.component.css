@@ -1,0 +1,11 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    background-color: #8687c5;
+}
+.container p{
+    color: azure;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifsss;
+}

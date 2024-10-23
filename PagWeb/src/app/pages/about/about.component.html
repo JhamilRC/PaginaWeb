@@ -1,0 +1,32 @@
+<header>
+  <h1>{{ aboutData?.header.title }}</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="inicio" target="_blank">INICIO</a>
+      </li>
+      <li>
+        <a [href]="link" target="_blank">CONTACTO</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="about">
+    <h2>{{ aboutData?.main.about.title }}</h2>
+    <div class="intro">
+      <img [src]="aboutData?.main.about.intro.image" alt="Nuestra Farmacia">
+      <p>{{ aboutData?.main.about.intro.text }}</p>
+    </div>
+    <div class="mission-vision">
+      <h3>{{ aboutData?.main.about.missionVision.mission.title }}</h3>
+      <p>{{ aboutData?.main.about.missionVision.mission.text }}</p>
+      <img [src]="aboutData?.main.about.missionVision.mission.image" alt="Nuestra Misión">
+
+      <h3>{{ aboutData?.main.about.missionVision.vision.title }}</h3>
+      <p>{{ aboutData?.main.about.missionVision.vision.text }}</p>
+      <img [src]="aboutData?.main.about.missionVision.vision.image" alt="Nuestra Visión">
+    </div>
+  </section>
+</main>

@@ -1,0 +1,12 @@
+{
+    "logo": {
+        "url": "",
+        "imagen": "../../../img/Paracetamol.jpg"
+    },
+    "navbar": {
+        "title": "Mi Tienda"
+    },
+    "footer": {
+        "title": "2024  Mi TiendaOnline"
+    }
+}

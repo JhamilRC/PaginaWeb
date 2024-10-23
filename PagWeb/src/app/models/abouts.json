@@ -1,0 +1,27 @@
+{
+    "header": {
+      "title": "Bienvenido a conocer de nuestra tienda"
+    },
+    "main": {
+      "about": {
+        "title": "Acerca de Nosotros",
+        "intro": {
+          "image": "../../../img/Paracetamol.jpg",
+          "text": "En Tu Farmacia, nos dedicamos a brindar la mejor atención y los medicamentos más confiables a nuestra comunidad. Fundada en 2023, nuestra misión es garantizar la salud y bienestar de nuestros clientes..."
+        },
+        "missionVision": {
+          "mission": {
+            "title": "Nuestra Misión",
+            "text": "Proveer medicamentos accesibles y de alta calidad, con un enfoque en la salud integral de nuestros clientes.",
+            "image": "../../../img/Analgesico.png"
+          },
+          "vision": {
+            "title": "Nuestra Visión",
+            "text": "Ser la farmacia de referencia en nuestra localidad, conocida por su compromiso con la salud y el bienestar",
+            "image": "../../../img/Paracetamol.png"
+          }
+        }
+      }
+    }
+  }
+  

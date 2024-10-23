@@ -1,0 +1,55 @@
+<div class="contener1">
+  <div class="contenedor-img">
+    <img class="img1" [src]="inicio?.banner1.imagen" alt="error inicio.json">
+  </div>
+</div>
+
+<div class="contener2">
+  <h3>{{inicio?.titulo1.title}}</h3>
+  <div class="contenedor3">
+    <div class="contenedor-cards" *ngFor="let novedad of novedad">
+      <div class="card1">
+        <img [src]="novedad.imagen" alt="{{novedad.nombre}}">
+        <h5>{{novedad.nombre }}</h5>
+        <p>{{novedad.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <h3>{{inicio?.titulo2.title}}</h3>
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Iterar sobre grupos de 4 productos por slide -->
+      <div class="carousel-item" *ngFor="let productChunk of chunkedProducts; index as slideIndex"
+        [ngClass]="{'active': slideIndex === 0}">
+        <div class="row">
+          <!-- Para cada grupo de productos, mostrar las tarjetas -->
+          <div class="col-md-3" *ngFor="let product of productChunk">
+            <div class="card">
+              <img src="../../../img/{{product.Nombre}}.png" class="card-img-top" alt="{{product.Nombre}}">
+              <div class="card-body">
+                <h5 class="card-title">{{product.Nombre}}</h5>
+                <p class="card-text">{{product.Descripcion}}</p>
+                <p class="card-price">${{product.Precio}}</p>
+                <a [href]="cargarlink(product.Nombre)" target="_blank" class="btn btn-primary">Informacion</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
